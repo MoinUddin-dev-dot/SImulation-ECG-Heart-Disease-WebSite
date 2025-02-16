@@ -1,0 +1,38 @@
+li {
+  list-style-type: none;
+}
+ol {
+  margin: 0;
+  padding: 0;
+}
+/* Parent container for centering the loader */
+/* Center the loader */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px ;
+  width: 100px ;
+  background-color: #f3f4f6; /* Light gray background */
+}
+
+/* Loader animation */
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #e5e7eb; /* Light gray border */
+  border-top: 5px solid #3b82f6; /* Blue border for the rotating segment */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Keyframe animation for spinning */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
